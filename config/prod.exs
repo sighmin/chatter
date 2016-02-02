@@ -27,6 +27,14 @@ config :hello_phoenix, HelloPhoenix.Repo,
   url: System.get_env("DATABASE_URL"),
   pool_size: 20
 
+# Configure your database
+config :chatter, Chatter.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: System.get_env("DATABASE_USERNAME"),
+  password: System.get_env("DATABASE_PASSWORD"),
+  database: "chatter_prod",
+  pool_size: 20
+
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
