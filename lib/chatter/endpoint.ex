@@ -1,7 +1,7 @@
 defmodule Chatter.Endpoint do
   use Phoenix.Endpoint, otp_app: :chatter
 
-  socket "/socket", Chatter.UserSocket
+  socket "/socket", Chatter.MultiplexedSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #

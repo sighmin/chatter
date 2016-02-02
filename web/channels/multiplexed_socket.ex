@@ -1,8 +1,9 @@
-defmodule Chatter.UserSocket do
+defmodule Chatter.MultiplexedSocket do
   use Phoenix.Socket
 
   ## Channels
   channel "rooms:*", Chatter.RoomChannel
+  channel "notifications:*", Chatter.NotificationsChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

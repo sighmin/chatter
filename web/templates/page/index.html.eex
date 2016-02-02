@@ -1,7 +1,10 @@
 <div class="jumbotron">
-  <h2>Chatter</h2>
-  <p class="lead">An exploratory endevour into understanding Phoenix channels.</p>
+  <h2>Elixir Phoenix</h2>
+  <p class="lead">Productivity and Performance. You <i>can</i> have it all:</p>
 </div>
+
+<div id="notifications"></div>
+<br/>
 
 <div id="messages"></div>
 <br/>
